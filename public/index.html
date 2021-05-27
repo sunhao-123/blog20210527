@@ -1,0 +1,93 @@
+<!--
+  Copyright (c) 2020 classmate-sun
+  [Classmate-Sun's Blog] is licensed under Mulan PSL v2.
+  You can use this software according to the terms and conditions of the Mulan PSL v2.
+  You may obtain a copy of Mulan PSL v2 at:
+          http://license.coscl.org.cn/MulanPSL2
+  THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+  EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+  MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+  See the Mulan PSL v2 for more details.
+-->
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="baidu-site-verification" content="TC6p6tgKL8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=0.25, minimum-scale=0.1, maximum-scale=0.4,user-scalable=no" />
+
+  <link rel="icon" href="favicon.ico">
+  <title>孙同学的博客</title>
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./layui/layui.js"></script>
+  <script src="./ace/ace.js"></script>
+  <link rel="stylesheet" href="./css/loading.css">
+  <!-- <style>
+    html {
+      filter: grayscale(95%);
+      /* -webkit-filter: grayscale(95%); */
+    }
+  </style> -->
+</head>
+
+<!-- <body> -->
+
+<body oncontextmenu="return false" ondragstart="return false">
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="loading">
+    <div class="containerLoading">
+      <div class="one common"></div>
+      <div class="two common"></div>
+      <div class="three common"></div>
+      <div class="four common"></div>
+      <div class="five common"></div>
+      <div class="six common"></div>
+      <div class="seven common"></div>
+      <div class="eight common"></div>
+    </div>
+  </div>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    var a_idx = 0;
+    jQuery(document).ready(function ($) {
+      $("body").click(function (e) {
+        var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+        var $i = $("<span/>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+          y = e.pageY;
+        $i.css({
+          "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+          "top": y - 20,
+          "left": x,
+          "position": "absolute",
+          "font-weight": "bold",
+          "color": "#ff6651"
+        });
+        $("body").append($i);
+        $i.animate({
+          "top": y - 180,
+          "opacity": 0
+        },
+          1500,
+          function () {
+            $i.remove();
+          });
+      });
+    });
+  </script>
+</body>
+
+</html>

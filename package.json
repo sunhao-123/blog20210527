@@ -1,0 +1,47 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "axios": "^0.19.2",
+    "browserslist": "^4.14.5",
+    "caniuse-lite": "^1.0.30001143",
+    "compression-webpack-plugin": "^6.1.1",
+    "core-js": "^3.6.4",
+    "cropperjs": "^1.5.1",
+    "element-ui": "^2.15.1",
+    "gsap": "^3.3.3",
+    "nprogress": "^0.2.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5",
+    "vuex": "^3.1.2",
+    "xgplayer": "^2.6.19",
+    "xgplayer-hls": "^2.3.9",
+    "xgplayer-hls.js": "^2.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-router": "~4.2.0",
+    "@vue/cli-plugin-vuex": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "sass-loader": "^10.0.2",
+    "vue-cli-plugin-element-ui": "~1.1.4",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.44.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
